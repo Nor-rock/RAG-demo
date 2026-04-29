@@ -21,7 +21,6 @@ Future Improvements
 - Return top-k results
 - Add frontend UI
 
-
 Example Request
 --
 POST http://localhost:8080/api/ask
@@ -50,16 +49,3 @@ Curl Example
 curl -X POST http://localhost:8080/api/ask \
 -H "Content-Type: application/json" \
 -d "{\"question\":\"What is a vector?\"}"
-
-
-
-
-
-
-
-
-
-
-
-
-
