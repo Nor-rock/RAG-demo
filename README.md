@@ -8,22 +8,11 @@ Features
 - Context-aware answer generation using LLM
 - Clean modular architecture (controller + service)
 
-
-Example Request
----------------------------
-POST /api/ask
-
-{
-  "question": "What is RAG?"
-}
-
-
 How It Works
 ---------------------------
 1. User submits a question
 2. System retrieves relevant document
 3. LLM generates answer using context
-
 
 Future Improvements
 ---------------------------
@@ -31,3 +20,46 @@ Future Improvements
 - Support PDFs (Apache Tika)
 - Return top-k results
 - Add frontend UI
+
+
+Example Request
+--
+POST http://localhost:8080/api/ask
+
+Content-Type: application/json
+
+{
+
+  "question": "What is a vector?"
+  
+}
+
+
+Example Response
+----
+{
+
+  "question": "What is a vector?",
+  
+  "answer": "A vector is a numerical representation of data..."
+  
+}
+
+Curl Example
+---
+curl -X POST http://localhost:8080/api/ask \
+-H "Content-Type: application/json" \
+-d "{\"question\":\"What is a vector?\"}"
+
+
+
+
+
+
+
+
+
+
+
+
+
