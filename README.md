@@ -3,10 +3,10 @@ simple RAG system built with Spring Boot that retrieves relevant documents and g
 
 Features
 ---------------------------
-REST API for asking questions
-Keyword-based document retrieval
-Context-aware answer generation using LLM
-Clean modular architecture (controller + service)
+-REST API for asking questions
+-Keyword-based document retrieval
+-Context-aware answer generation using LLM
+-Clean modular architecture (controller + service)
 
 
 Example Request
@@ -27,7 +27,7 @@ How It Works
 
 Future Improvements
 ---------------------------
-Add embeddings for semantic search
-Support PDFs (Apache Tika)
-Return top-k results
-Add frontend UI
+-Add embeddings for semantic search
+-Support PDFs (Apache Tika)
+-Return top-k results
+-Add frontend UI
